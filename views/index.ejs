@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="futbolApp">
+  <head>
+    <title><%= title %></title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  	<script src="/bower_components/angular/angular.js"></script>
+  	<script src="/javascripts/futbol.js"></script>
+  </head>
+  <body ng-controller="futbolDashboardCtrl">
+
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <div ng-repeat="player in players">
+    	{{ player.name }}
+    </div>
+  </body>
+</html>
+
+
